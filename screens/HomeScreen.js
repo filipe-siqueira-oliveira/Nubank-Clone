@@ -11,6 +11,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 
 import FuntionalitiesList from "../components/FuntionalitiesList";
 import CardsList from "../components/CardsList";
@@ -45,6 +46,7 @@ const HomeScreen = () => {
 
         {/* Body */}
         <View className="w-full h-auto bg-[#000] py-8">
+          {/* Account */}
           <TouchableOpacity className="flex-row justify-between mx-8">
             <View className="space-y-1">
               <Text className="text-xl font-bold text-[#FFF]">Conta</Text>
@@ -60,6 +62,7 @@ const HomeScreen = () => {
           {/* Funtionalities */}
           <FuntionalitiesList />
 
+          {/* My cards */}
           <TouchableOpacity className="w-auto h-14 bg-nuGray mx-8 rounded-xl flex-row items-center px-5 space-x-4 mt-6">
             <MaterialCommunityIcons
               name="credit-card-chip-outline"
@@ -69,11 +72,13 @@ const HomeScreen = () => {
             <Text className="text-md font-bold text-[#FFF]">Meus cartões</Text>
           </TouchableOpacity>
 
+          {/* Cards List */}
           <CardsList />
 
           {/* Divider */}
           <View style={{ height: 2 }} className="w-full bg-nuGray mt-4" />
 
+          {/* Credit Card */}
           <TouchableOpacity className="flex-row justify-between mx-8 my-8">
             <View className="space-y-4">
               <Text className="text-xl font-bold text-[#FFF]">
@@ -96,6 +101,53 @@ const HomeScreen = () => {
 
           {/* Divider */}
           <View style={{ height: 2 }} className="w-full bg-nuGray" />
+
+          <View className="mt-8">
+            <Text className="mx-8 text-xl font-bold text-[#FFF]">
+              Acompanhe também
+            </Text>
+            <TouchableOpacity className="w-auto h-20 bg-nuGray mx-8 rounded-xl flex-row items-center px-5 space-x-4 mt-6 justify-between">
+              <View className="flex-row items-center justify-center space-x-4">
+                <FontAwesome5 name="coins" size={24} color="#e5e5e5" />
+                <Text>
+                  <Text className="text-md font-bold text-[#FFF]">
+                    Assistente de
+                  </Text>
+                  {"\n"}
+                  <Text className="text-md font-bold text-[#FFF]">
+                    pagamentos
+                  </Text>
+                </Text>
+              </View>
+              <Text className="text-[#FFF] h-auto w-auto bg-nuBg font-bold px-1 rounded-xl">
+                Novo
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+          {/* Divider */}
+          <View style={{ height: 2 }} className="w-full bg-nuGray mt-6" />
+
+          {/* Emprestimos */}
+          <TouchableOpacity className="flex-row justify-between mx-8 mt-8">
+            <View className="space-y-4">
+              <View className="flex-row justify-between">
+                <Text className="text-xl font-bold text-[#FFF]">
+                  Empréstimo
+                </Text>
+                <Entypo name="chevron-right" size={26} color="#e5e5e5" />
+              </View>
+              <Text className="text-md font-bold text-[#e5e5e5]">
+                Aviso criado! Vamos te avisar aqui no app se um empréstimo ficar
+                disponível.
+              </Text>
+            </View>
+          </TouchableOpacity>
+
+          {/* Divider */}
+          <View style={{ height: 2 }} className="w-full bg-nuGray mt-8" />
+
+          {/* More */}
         </View>
       </ScrollView>
     </SafeAreaView>
