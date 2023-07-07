@@ -10,6 +10,8 @@ module.exports = {
     colors: {
       nuBg: "#591e8c",
       nuText: "#7c5da4",
+      nuGray: "#222222",
+      nuIcons: "#e5e5e5",
     },
     extend: {},
   },
