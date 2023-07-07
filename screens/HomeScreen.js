@@ -15,6 +15,7 @@ import { FontAwesome5 } from "@expo/vector-icons";
 
 import FuntionalitiesList from "../components/FuntionalitiesList";
 import CardsList from "../components/CardsList";
+import KnowMoreList from "../components/KnowMoreList";
 
 const HomeScreen = () => {
   return (
@@ -58,10 +59,8 @@ const HomeScreen = () => {
               <Entypo name="chevron-right" size={26} color="#e5e5e5" />
             </View>
           </TouchableOpacity>
-
           {/* Funtionalities */}
           <FuntionalitiesList />
-
           {/* My cards */}
           <TouchableOpacity className="w-auto h-14 bg-nuGray mx-8 rounded-xl flex-row items-center px-5 space-x-4 mt-6">
             <MaterialCommunityIcons
@@ -71,13 +70,10 @@ const HomeScreen = () => {
             />
             <Text className="text-md font-bold text-[#FFF]">Meus cartões</Text>
           </TouchableOpacity>
-
           {/* Cards List */}
           <CardsList />
-
           {/* Divider */}
           <View style={{ height: 2 }} className="w-full bg-nuGray mt-4" />
-
           {/* Credit Card */}
           <TouchableOpacity className="flex-row justify-between mx-8 my-8">
             <View className="space-y-4">
@@ -86,9 +82,7 @@ const HomeScreen = () => {
               </Text>
               <View className="space-y-1">
                 <Text className="text-lg text-[#FFF]">Fatura atual</Text>
-                <Text className="text-xl font-bold text-[#FFF]">
-                  R$ 30.734,76
-                </Text>
+                <Text className="text-xl font-bold text-[#FFF]">R$ 886,08</Text>
               </View>
               <Text className="text-md text-[#e5e5e5]">
                 Limite disponível de R$ 313,92
@@ -98,10 +92,8 @@ const HomeScreen = () => {
               <Entypo name="chevron-right" size={26} color="#e5e5e5" />
             </View>
           </TouchableOpacity>
-
           {/* Divider */}
           <View style={{ height: 2 }} className="w-full bg-nuGray" />
-
           <View className="mt-8">
             <Text className="mx-8 text-xl font-bold text-[#FFF]">
               Acompanhe também
@@ -124,10 +116,8 @@ const HomeScreen = () => {
               </Text>
             </TouchableOpacity>
           </View>
-
           {/* Divider */}
           <View style={{ height: 2 }} className="w-full bg-nuGray mt-6" />
-
           {/* Emprestimos */}
           <TouchableOpacity className="flex-row justify-between mx-8 mt-8">
             <View className="space-y-4">
@@ -148,6 +138,7 @@ const HomeScreen = () => {
           <View style={{ height: 2 }} className="w-full bg-nuGray mt-8" />
 
           {/* More */}
+          <KnowMoreList />
         </View>
       </ScrollView>
     </SafeAreaView>
