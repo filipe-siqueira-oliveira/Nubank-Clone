@@ -48,7 +48,9 @@ const HomeScreen = () => {
               <Text className="text-xl font-bold text-[#FFF]">Conta</Text>
               <Text className="text-xl font-bold text-[#FFF]">R$ 55,76</Text>
             </View>
-            <Entypo name="chevron-right" size={26} color="#e5e5e5" />
+            <TouchableOpacity>
+              <Entypo name="chevron-right" size={26} color="#e5e5e5" />
+            </TouchableOpacity>
           </View>
 
           {/* Funtionalities */}

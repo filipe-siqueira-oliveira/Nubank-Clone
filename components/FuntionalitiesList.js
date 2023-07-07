@@ -19,15 +19,15 @@ const FuntionalitiesList = () => {
       </View>
       <View className="space-y-4 items-center justify-center">
         <TouchableOpacity className="h-20 w-20 bg-nuGray rounded-full items-center justify-center">
-          <MaterialCommunityIcons name="barcode" size={24} color="#e5e5e5" />
+          <MaterialCommunityIcons name="barcode" size={30} color="#e5e5e5" />
         </TouchableOpacity>
         <Text className="text-[#FFF] text-md font-bold">Pagar</Text>
       </View>
       <View className="space-y-4 items-center justify-center">
-        <TouchableOpacity className="h-20 w-20 bg-nuGray rounded-full items-center justify-center">
+        <TouchableOpacity className="h-20 w-20 bg-nuGray rounded-full items-center justify-center pl-2">
           <MaterialCommunityIcons
             name="bank-transfer"
-            size={24}
+            size={35}
             color="#e5e5e5"
           />
         </TouchableOpacity>
@@ -35,25 +35,25 @@ const FuntionalitiesList = () => {
       </View>
       <View className="space-y-4 items-center justify-center">
         <TouchableOpacity className="h-20 w-20 bg-nuGray rounded-full items-center justify-center">
-          <FontAwesome name="mobile-phone" size={24} color="#e5e5e5" />
+          <FontAwesome name="mobile-phone" size={35} color="#e5e5e5" />
         </TouchableOpacity>
         <Text className="text-[#FFF] text-md font-bold">Recarga</Text>
       </View>
       <View className="space-y-4 items-center justify-center">
         <TouchableOpacity className="h-20 w-20 bg-nuGray rounded-full items-center justify-center">
-          <FontAwesome5 name="money-bill-alt" size={24} color="#e5e5e5" />
+          <FontAwesome5 name="money-bill-alt" size={26} color="#e5e5e5" />
         </TouchableOpacity>
         <Text className="text-[#FFF] text-md font-bold">Depositar</Text>
       </View>
       <View className="space-y-4 items-center justify-center">
         <TouchableOpacity className="h-20 w-20 bg-nuGray rounded-full items-center justify-center">
-          <Feather name="heart" size={24} color="#e5e5e5" />
+          <Feather name="heart" size={26} color="#e5e5e5" />
         </TouchableOpacity>
         <Text className="text-[#FFF] text-md font-bold">Doação</Text>
       </View>
       <View className="space-y-4 items-center justify-center">
         <TouchableOpacity className="h-20 w-20 bg-nuGray rounded-full items-center justify-center">
-          <AntDesign name="barschart" size={24} color="#e5e5e5" />
+          <AntDesign name="barschart" size={30} color="#e5e5e5" />
         </TouchableOpacity>
         <Text className="text-[#FFF] text-md font-bold">Investir</Text>
       </View>
