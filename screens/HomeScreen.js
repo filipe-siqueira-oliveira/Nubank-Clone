@@ -11,6 +11,8 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 
+import FuntionalitiesList from "../components/FuntionalitiesList";
+
 const HomeScreen = () => {
   return (
     <SafeAreaView>
@@ -34,9 +36,23 @@ const HomeScreen = () => {
               </TouchableOpacity>
             </View>
           </View>
-          <Text className="mt-14 mx-8 text-2xl font-bold text-[#FFF]">
+          <Text className="mt-14 mx-8 text-xl font-bold text-[#FFF]">
             Olá, Filipe
           </Text>
+        </View>
+
+        {/* Body */}
+        <View className="w-full h-auto bg-[#000] py-8">
+          <View className="flex-row justify-between mx-8">
+            <View className="space-y-1">
+              <Text className="text-xl font-bold text-[#FFF]">Conta</Text>
+              <Text className="text-xl font-bold text-[#FFF]">R$ 55,76</Text>
+            </View>
+            <Entypo name="chevron-right" size={26} color="#e5e5e5" />
+          </View>
+
+          {/* Funtionalities */}
+          <FuntionalitiesList />
         </View>
       </ScrollView>
     </SafeAreaView>
