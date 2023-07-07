@@ -20,7 +20,7 @@ import KnowMoreList from "../components/KnowMoreList";
 const HomeScreen = () => {
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView bounces={false}>
         {/* Header */}
         <View className="bg-nuBg w-full h-40">
           <View className="h-4 w-4 bg-[#FFF] rounded-full absolute top-5 left-14 z-50 border-2 border-nuBg" />
@@ -52,7 +52,7 @@ const HomeScreen = () => {
             <View className="space-y-1">
               <Text className="text-xl font-bold text-[#FFF]">Conta</Text>
               <Text className="text-xl font-bold text-[#FFF]">
-                R$ 30.734,76
+                R$ 202.734,76
               </Text>
             </View>
             <View>
@@ -139,6 +139,8 @@ const HomeScreen = () => {
 
           {/* More */}
           <KnowMoreList />
+
+          <View className="w-2 h-8" />
         </View>
       </ScrollView>
     </SafeAreaView>

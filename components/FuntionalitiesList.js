@@ -13,7 +13,7 @@ const FuntionalitiesList = () => {
     <ScrollView horizontal className="px-3 mt-8 space-x-3 pb-2">
       <View className="h-2 w-2" />
       <View className="space-y-4 items-center justify-center">
-        <TouchableOpacity className="h-16 w-16 bg-nuGray rounded-full items-center justify-center">
+        <TouchableOpacity className="h-16 w-16 bg-nuGray rounded-full items-center justify-center pl-1">
           <MaterialIcons name="attach-money" size={35} color="#e5e5e5" />
         </TouchableOpacity>
         <Text className="text-[#FFF] text-md font-bold">Área Pix</Text>
