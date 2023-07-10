@@ -1,28 +1,33 @@
 import { View, TouchableHighlight, StyleSheet } from "react-native";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const TabBar = () => {
-  const [isSwapSelected, setIsSwapSelected] = useState(false);
+  const navigation = useNavigation();
+  const [isSwapSelected, setIsSwapSelected] = useState(true);
   const [isMoneySelected, setIsMoneySelected] = useState(false);
   const [isShoppingBagSelected, setIsShoppingBagSelected] = useState(false);
 
   const handleSwapPress = () => {
+    navigation.navigate("Home");
     setIsSwapSelected(true);
     setIsMoneySelected(false);
     setIsShoppingBagSelected(false);
   };
 
   const handleMoneyPress = () => {
+    navigation.navigate("MoneyAndSecures");
     setIsSwapSelected(false);
     setIsMoneySelected(true);
     setIsShoppingBagSelected(false);
   };
 
   const handleShoppingBagPress = () => {
+    navigation.navigate("Shopping");
     setIsSwapSelected(false);
     setIsMoneySelected(false);
     setIsShoppingBagSelected(true);
